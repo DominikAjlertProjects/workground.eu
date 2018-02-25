@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 95vh;
+  position: relative;
+  background-image: linear-gradient(to right, #c09f80a8, #565656b6), url(./assets/img/background.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.logo {
+  height: 3.5rem;
+  backface-visibility: hidden;
+  transform: scale(2);
+}
+
+.logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+
+.heading-main {
+  display: block;
+  font-size: 7rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.heading-sub {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 2.2rem;
+
+  animation-name: moveInRight;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  border-radius: 10rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  transition: all .3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.3);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.login-header {
+  height: 95vh;
+  position: relative;
+  background-image: linear-gradient(to right, #c09f80a8, #565656b6), url(./assets/img/background.jpg);
+  background-size: cover;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.login-label {
+  positon: absolute;
+  display: flex;
+}
