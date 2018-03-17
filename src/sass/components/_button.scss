@@ -1,0 +1,70 @@
+.btn {
+  &:link,
+  &:visited {
+    border-radius: 10rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all .3s;
+    position: relative;
+    cursor: pointer;
+
+    animation-name: animateButton;
+    animation-duration: 1.5s;
+    animation-delay: .75s;
+    animation-fill-mode: backwards;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.3);
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black,.3);
+  }
+
+  &-white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+
+    &-outline {
+      border: solid .34rem rgba($color-grey-dark, .84);
+      width: 25rem;
+    }
+  }
+
+  &__card {
+    top: 14%;
+    border: .4rem solid #c09f80;
+  }
+}
+
+#proceedLogin {
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.3);
+  }
+}
+
+#goLogin {
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.3);
+  }
+}
+
+#goSignIn {
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.3);
+  }
+}

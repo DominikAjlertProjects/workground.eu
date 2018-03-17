@@ -1,0 +1,73 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 37rem;
+  transition: all .3s;
+
+  &__side {
+    height: 37rem;
+    background-color: rgba(#fff, 0.83);
+    font-size: 2rem;
+    transition: all .7s ease;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    text-align: center;
+    z-index: 5;
+
+    &__icon {
+      font-size: 6rem;
+      margin-bottom: .5rem;
+      display: inline-block;
+      background-image: linear-gradient(to right, $color-coffee, $color-grey);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+      width: 100%;
+    }
+
+    &__front {
+      &__rotated {
+        transform: rotateY(180deg);
+        transition: all .8s;
+      }
+    }
+
+    &__back {
+      // background-color: linear-gradient(to right, $color-coffee-transformed, $color-grey-transformed);
+      background-color: rgba(#fff, 0.83);
+      background-size: cover;
+      width: 100%;
+      transform: rotateY(180deg);
+      z-index: 10;
+
+      &__rotated {
+        transform: rotateY(0);
+        transition: all .8s ease;
+      }
+    }
+
+    &__disappear {
+      animation-name: disappear;
+      animation-duration: 2s;
+      opacity: 0;
+    }
+
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 8rem rgba($color-black, .15);
+  }
+
+  &__zeroWidth {
+    width: 0;
+    transition: .8s;
+    display: none;
+  }
+}

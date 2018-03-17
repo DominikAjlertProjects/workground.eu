@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';
+import './assets/icon-font.css';
 import App from './App';
+import Loader from './components/Loader'
 import LoginForm from './containers/LoginForm';
+import MainPage from './containers/MainPage'
 import reducers from './reducers';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -19,6 +22,8 @@ ReactDOM.render(
       <div>
         <Switch>
           {/* <Route path="/login" component={LoginForm} /> */}
+          <Route path="/loader" component={Loader} />
+          <Route path="/main" component={MainPage} />
           <Route path="/" component={App} />
         </Switch>
       </div>

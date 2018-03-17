@@ -1,0 +1,200 @@
+.cssload-preloader {
+	position: absolute;
+	left: 50%;
+	font-size: 19px;
+	display: block;
+	width: 3.75em;
+	height: 4.25em;
+	margin-left: -1.875em;
+	margin-top: -2.125em;
+	transform-origin: center center;
+		-o-transform-origin: center center;
+		-ms-transform-origin: center center;
+		-webkit-transform-origin: center center;
+		-moz-transform-origin: center center;
+	transform: rotateY(180deg) rotateZ(-60deg);
+		-o-transform: rotateY(180deg) rotateZ(-60deg);
+		-ms-transform: rotateY(180deg) rotateZ(-60deg);
+		-webkit-transform: rotateY(180deg) rotateZ(-60deg);
+		-moz-transform: rotateY(180deg) rotateZ(-60deg);
+}
+
+.cssload-preloader .cssload-slice {
+	border-top: 1.125em solid transparent;
+	border-right: none;
+	border-bottom: 1em solid transparent;
+	border-left: 1.875em solid #76323f;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform-origin: left bottom;
+		-o-transform-origin: left bottom;
+		-ms-transform-origin: left bottom;
+		-webkit-transform-origin: left bottom;
+		-moz-transform-origin: left bottom;
+	border-radius: 3px 3px 0 0;
+}
+
+.cssload-preloader .cssload-slice:nth-child(1) {
+	transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
+		-o-transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
+		-ms-transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
+		-webkit-transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
+		-moz-transform: rotateZ(60deg) rotateY(0deg) rotateX(0);
+	animation: 0.17s linear 0.94s preload-hide-1 both 1;
+		-o-animation: 0.17s linear 0.94s preload-hide-1 both 1;
+		-ms-animation: 0.17s linear 0.94s preload-hide-1 both 1;
+		-webkit-animation: 0.17s linear 0.94s preload-hide-1 both 1;
+		-moz-animation: 0.17s linear 0.94s preload-hide-1 both 1;
+}
+
+.cssload-preloader .cssload-slice:nth-child(2) {
+	transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
+		-o-transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
+		-ms-transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
+		-webkit-transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
+		-moz-transform: rotateZ(120deg) rotateY(0deg) rotateX(0);
+	animation: 0.17s linear 0.85s preload-hide-2 both 1;
+		-o-animation: 0.17s linear 0.85s preload-hide-2 both 1;
+		-ms-animation: 0.17s linear 0.85s preload-hide-2 both 1;
+		-webkit-animation: 0.17s linear 0.85s preload-hide-2 both 1;
+		-moz-animation: 0.17s linear 0.85s preload-hide-2 both 1;
+}
+
+.cssload-preloader .cssload-slice:nth-child(3) {
+	transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
+		-o-transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
+		-ms-transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
+		-webkit-transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
+		-moz-transform: rotateZ(180deg) rotateY(0deg) rotateX(0);
+	animation: 0.17s linear 0.76s preload-hide-3 both 1;
+		-o-animation: 0.17s linear 0.76s preload-hide-3 both 1;
+		-ms-animation: 0.17s linear 0.76s preload-hide-3 both 1;
+		-webkit-animation: 0.17s linear 0.76s preload-hide-3 both 1;
+		-moz-animation: 0.17s linear 0.76s preload-hide-3 both 1;
+}
+
+.cssload-preloader .cssload-slice:nth-child(4) {
+	transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
+		-o-transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
+		-ms-transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
+		-webkit-transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
+		-moz-transform: rotateZ(240deg) rotateY(0deg) rotateX(0);
+	animation: 0.17s linear 0.67s preload-hide-4 both 1;
+		-o-animation: 0.17s linear 0.67s preload-hide-4 both 1;
+		-ms-animation: 0.17s linear 0.67s preload-hide-4 both 1;
+		-webkit-animation: 0.17s linear 0.67s preload-hide-4 both 1;
+		-moz-animation: 0.17s linear 0.67s preload-hide-4 both 1;
+}
+
+.cssload-preloader .cssload-slice:nth-child(5) {
+	transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
+		-o-transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
+		-ms-transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
+		-webkit-transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
+		-moz-transform: rotateZ(300deg) rotateY(0deg) rotateX(0);
+	animation: 0.17s linear 0.58s preload-hide-5 both 1;
+		-o-animation: 0.17s linear 0.58s preload-hide-5 both 1;
+		-ms-animation: 0.17s linear 0.58s preload-hide-5 both 1;
+		-webkit-animation: 0.17s linear 0.58s preload-hide-5 both 1;
+		-moz-animation: 0.17s linear 0.58s preload-hide-5 both 1;
+}
+
+.cssload-preloader .cssload-slice:nth-child(6) {
+	transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
+		-o-transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
+		-ms-transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
+		-webkit-transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
+		-moz-transform: rotateZ(360deg) rotateY(0deg) rotateX(0);
+	animation: 0.17s linear 0.48s preload-hide-6 both 1;
+		-o-animation: 0.17s linear 0.48s preload-hide-6 both 1;
+		-ms-animation: 0.17s linear 0.48s preload-hide-6 both 1;
+		-webkit-animation: 0.17s linear 0.48s preload-hide-6 both 1;
+		-moz-animation: 0.17s linear 0.48s preload-hide-6 both 1;
+}
+
+.cssload-preloader.cssload-loading {
+	animation: 2.3s preload-flip steps(2) infinite both;
+		-o-animation: 2.3s preload-flip steps(2) infinite both;
+		-ms-animation: 2.3s preload-flip steps(2) infinite both;
+		-webkit-animation: 2.3s preload-flip steps(2) infinite both;
+		-moz-animation: 2.3s preload-flip steps(2) infinite both;
+}
+
+.cssload-preloader.cssload-loading .cssload-slice:nth-child(1) {
+	transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
+		-o-transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
+		-ms-transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
+		-webkit-transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
+		-moz-transform: rotateZ(60deg) rotateY(90deg) rotateX(0);
+	animation: 2.3s preload-cycle-1 linear infinite both;
+		-o-animation: 2.3s preload-cycle-1 linear infinite both;
+		-ms-animation: 2.3s preload-cycle-1 linear infinite both;
+		-webkit-animation: 2.3s preload-cycle-1 linear infinite both;
+		-moz-animation: 2.3s preload-cycle-1 linear infinite both;
+}
+
+.cssload-preloader.cssload-loading .cssload-slice:nth-child(2) {
+	transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
+		-o-transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
+		-ms-transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
+		-webkit-transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
+		-moz-transform: rotateZ(120deg) rotateY(90deg) rotateX(0);
+	animation: 2.3s preload-cycle-2 linear infinite both;
+		-o-animation: 2.3s preload-cycle-2 linear infinite both;
+		-ms-animation: 2.3s preload-cycle-2 linear infinite both;
+		-webkit-animation: 2.3s preload-cycle-2 linear infinite both;
+		-moz-animation: 2.3s preload-cycle-2 linear infinite both;
+}
+
+.cssload-preloader.cssload-loading .cssload-slice:nth-child(3) {
+	transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
+		-o-transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
+		-ms-transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
+		-webkit-transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
+		-moz-transform: rotateZ(180deg) rotateY(90deg) rotateX(0);
+	animation: 2.3s preload-cycle-3 linear infinite both;
+		-o-animation: 2.3s preload-cycle-3 linear infinite both;
+		-ms-animation: 2.3s preload-cycle-3 linear infinite both;
+		-webkit-animation: 2.3s preload-cycle-3 linear infinite both;
+		-moz-animation: 2.3s preload-cycle-3 linear infinite both;
+}
+
+.cssload-preloader.cssload-loading .cssload-slice:nth-child(4) {
+	transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
+		-o-transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
+		-ms-transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
+		-webkit-transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
+		-moz-transform: rotateZ(240deg) rotateY(90deg) rotateX(0);
+	animation: 2.3s preload-cycle-4 linear infinite both;
+		-o-animation: 2.3s preload-cycle-4 linear infinite both;
+		-ms-animation: 2.3s preload-cycle-4 linear infinite both;
+		-webkit-animation: 2.3s preload-cycle-4 linear infinite both;
+		-moz-animation: 2.3s preload-cycle-4 linear infinite both;
+}
+
+.cssload-preloader.cssload-loading .cssload-slice:nth-child(5) {
+	transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
+		-o-transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
+		-ms-transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
+		-webkit-transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
+		-moz-transform: rotateZ(300deg) rotateY(90deg) rotateX(0);
+	animation: 2.3s preload-cycle-5 linear infinite both;
+		-o-animation: 2.3s preload-cycle-5 linear infinite both;
+		-ms-animation: 2.3s preload-cycle-5 linear infinite both;
+		-webkit-animation: 2.3s preload-cycle-5 linear infinite both;
+		-moz-animation: 2.3s preload-cycle-5 linear infinite both;
+}
+
+.cssload-preloader.cssload-loading .cssload-slice:nth-child(6) {
+	transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
+		-o-transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
+		-ms-transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
+		-webkit-transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
+		-moz-transform: rotateZ(360deg) rotateY(90deg) rotateX(0);
+	animation: 2.3s preload-cycle-6 linear infinite both;
+		-o-animation: 2.3s preload-cycle-6 linear infinite both;
+		-ms-animation: 2.3s preload-cycle-6 linear infinite both;
+		-webkit-animation: 2.3s preload-cycle-6 linear infinite both;
+		-moz-animation: 2.3s preload-cycle-6 linear infinite both;
+}

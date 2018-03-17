@@ -1,0 +1,78 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animateButton {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes mainCardFromLeft {
+  0% {
+    width: calc((100% - #{$space-horizontal})/2);
+    transform: translate(0);
+  }
+
+  100% {
+    width: 130%;
+    transform: translateX(8%);
+  }
+}
+
+@keyframes mainCardFromRight {
+  0% {
+    width: calc((100% - #{$space-horizontal})/2);
+    transform: translate(0);
+  }
+
+  100% {
+    width: 130%;
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes moveLogin {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translateX(8%);
+  }
+}

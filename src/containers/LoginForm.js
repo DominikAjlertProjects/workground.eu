@@ -14,39 +14,49 @@ export default class LoginForm extends Component {
         this.state = {
             login: '',
             password: '',
-            email: '',
-            companyName: '',
             errorFields: {
                 login: '',
                 password: ''
             }
         }
+
+        this.handleLoginClick = this.handleLoginClick.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleLoginClick(event) {
+      event.preventDefault();
+      console.log("Logging user!");
+    }
+
+    handleChange(event) {
+      console.log("Event.target.name", event.target.name);
+      console.log("Event. target.value", event.target.value);
+      this.setState({
+        [event.target.name]: event.target.value,
+      });
     }
 
     render() {
+      const { login, password } = this.state;
         return(
-            <header className="login-header">
-                <form className="login-form" onSubmit={this.onFormSubmit}>
-                    <div className="login-input">
-                        <label className="label-input">Login</label>
-                        <input className="login-input" placeholder="Login" value={this.state.login} type="text" />
-                        <div className="login-errors">{this.state.errorFields.login}</div>
-                    </div>
-                    <div className="login-input">
-                        <label className="label-input">Password</label>
-                        <input className="login-input" placeholder="Password" value={this.state.password} type="password" />
-                        <div className="login-errors">{this.state.errorFields.password}</div>
-                    </div> 
-                    <div className="login-input">
-                        <label className="label-input">Email</label>
-                        <input className="login-input" placeholder="Email" value={this.state.email} type="text" />
-                    </div>
-                    <div className="login-input">
-                        <label className="label-input">Your company name</label>
-                        <input className="login-input" placeholder="Company name" value={this.state.companyName} type="text" />
-                    </div>  
-                </form>
-            </header>
+          <div className="login__form">
+            <form className="form">
+              <div className="form__group animate-none">
+                <input name="login" placeholder="Login" className="form__input" value={login} onChange={this.handleChange} type="text" />
+                <label className="form__label">Login</label>
+              </div>
+
+              <div className="form__group animate-none">
+                <input name="password" placeholder="Password" className="form__input" value={password} onChange={this.handleChange} type="password" />
+                <label className="form__label">Password</label>
+              </div>
+
+              <div className="form__group">
+                <a href="" className="btn btn-white btn-white-outline btn-login" onClick={this.handleLoginClick}>Login</a>
+              </div>
+            </form>
+          </div>
         );
     }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../assets/img/logo.png';
 import PropTypes from 'prop-types';
+import Loader from './Loader';
 
 export default class Header extends Component {
 
@@ -10,29 +10,32 @@ export default class Header extends Component {
 
   constructor(props, context) {
     super(props, context);
+    this.state = {
+      isLoading: false,
+    }
 
     this.proceedToLogin = this.proceedToLogin.bind(this);
   }
 
   proceedToLogin(event) {
-    console.log("Event", event);
-      this.context.router.history.push('/login');
+    event.preventDefault();
+    this.setState({
+      isLoading: true,
+    })
   }
 
   render() {
-    return (
-      <header className="header">
-        <div className="logo-box">
-          <img src={logo} alt="Logo" className="logo" />
-        </div>
+    const { isLoading } = this.state;
 
+  return isLoading ? (<Loader />) : (
+      <header className="header">
         <div className="text-box">
           <h1 className="heading-primary">
-            <span className="heading-main">Workground</span>
-            <span className="heading-sub">playgroud of ideas</span>
+            <span className="heading-primary-main">Workground</span>
+            <span className="heading-primary-sub">playgroud of ideas</span>
           </h1>
 
-          <a className="btn btn-white" onClick={this.proceedToLogin}>Begin the journey</a>
+          <a id="proceedLogin" href="" className="btn btn-white" onClick={this.proceedToLogin}>Begin the journey</a>
         </div>
       </header>
     );
